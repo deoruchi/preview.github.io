@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif;---400 */
+body{
+    background-color:hsl(30, 38%, 92%) ;
+}
+section
+{
+   
+    height:auto;
+    margin:10vh 2vw;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+section,#image{
+    width: 360px;
+}
+#image{
+    background-image:url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display:inline-block;
+    border-radius: 10px 10px 0 0 ;
+}
+.container{
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 100px 100px 150px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.heading{
+    line-height: 2.3rem;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:hsl(228, 12%, 48%);
+    opacity: 0.8;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(212, 21%, 14%);
+}
+
+.heading  + p{
+    padding-top:10px;
+    line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+    opacity:0.8;
+}
+
+.price>span:nth-child(1){
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+   
+}
+
+.price>span:nth-child(2){
+    text-decoration: line-through;
+    padding: 10px 0px 10px 20px;
+    display: inline-block;
+    color:hsl(228, 12%, 48%);
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.num_add{
+    line-height: 3rem;
+}
+
+.button{
+    text-align: center;
+    width:340px;
+    background-color: hsl(158, 36%, 37%);
+    display: inline-block;
+    margin: 4px -1.5%;;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.button:hover{
+    background-color: hsl(159, 42%, 20%);
+}
+#p{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+}
+.button>img{
+   padding: 0 10px;
+}
+
+#image2{display: none;}
+
+@media screen and (min-width:412px) and (max-width:425px) {
+    section{
+        margin:10vh 7vw;
+    }
+}
+
+@media  screen and (min-width:768px) {
+    
+    #image{display: none;}
+
+    #image2{
+        display: block;
+        width: 325px;
+        height: auto;
+        background-image: url(images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+    }
+    section{
+        width:700px;
+        display: grid;
+        grid-template-columns: 325px 300px;
+        grid-template-rows: 85vh;
+        justify-items: flex-start;
+        margin: 20vh 5vw;
+    }
+
+    .container{
+ 
+        width:  200px;
+        padding: 10px;
+        
+    }
+    .heading{
+        padding: 20px 20px 20px 0px ;
+        text-align: left;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .heading + p{
+        font-size: 17px;
+        text-align: center justify;
+        padding-right: 30px;
+        margin-top:20%;
+        word-spacing: 0.5rem;
+    }
+
+    .num_add{
+        margin-top:25%;
+        
+    }
+}
+
+@media  (min-width:1024px) {
+    section{
+        margin: 20vh 15vw;
+    }
+}
+
+@media (min-width:1440px){
+    section{
+        width:700px;
+        display: grid;
+        grid-template-columns: 325px 300px;
+        grid-template-rows: 60vh;
+   
+        margin: 20vh 25vw;
+    }
+    
+}
+
+@media (min-width:2560px){
+
+    section{
+        width:1020px;
+        grid-template-columns: 500px 600px;
+        grid-template-rows: 50vh;
+        margin: 20vh 32vw;
+        border-radius: 10px;
+    }
+
+    #image2{
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+
+    .container{
+        width:  500px;
+        padding: 10px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        margin-top: 5%;
+        font-size: 60px;
+        line-height: 3.5rem;
+    }
+    .heading + p {
+        margin-top: 35%;
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+    .price{
+        margin-top:30%;
+    }
+    .price>span:nth-child(1){
+        font-size: 50px;
+       
+    }
+    
+    .price>span:nth-child(2){
+      font-size: 25px;
+    }
+
+   .container{
+    padding: 20px;
+   }
+
+    .button{
+        width:430px;
+        margin: 4px 1%;
+        padding: 10px;
+    }
+    
+    #p{
+        font-size: 25px;
+    }
+    .button>img{
+        width:50px;
+        position: relative;
+        left:0;
+        top:8px;
+     }
+
+}
